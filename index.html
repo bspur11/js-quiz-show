@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Quiz Timer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="score-board">
+      <div id="playerScore" class="score">Score</div>
+      <div id="timer">Timer</div>
+    </div>
+    <h1 class="welcome">Coding Quiz Challange</h1>
+    <h2 id="intro-para" class="intro">Try to answer the following code related questions within the time limit. Keep in
+      mind that
+      incorrect answers will penalize your score/time by ten seconds!
+    </h2>
+    <button id="start" class="btn">Start</button>
+    <h2 id="countdown"></h2>
+    <p id="main"></p>
+  </div>
+
+  <div id="question-container">
+    <h3 id="question" class="hide"></h3>
+    <div id="answer-buttons" class="btn-grid hide">
+      <button id="answer1" class="answer">Answer1</button>
+      <button id="answer2" class="answer">Answer2</button>
+      <button id="answer3" class="answer">Answer3</button>
+      <button id="answer4" class="answer">Answer4</button>
+      <p id="results"></p>
+    </div>
+  </div>
+
+  <div id="player-container">
+    <form>
+      <label for="fname">Player Name</label>
+      <input type="text" id="fname" name="fname" />
+      <button type="button" onclick="onSaveScore()">Save </button>
+    </form>
+    <form style="margin-top:20px">
+
+      <button type="button" class="btn" onclick="onRestartQuiz()">
+        Restart
+      </button>
+    </form>
+  </div>
+  <script src="/assets/script.js/script.js"></script>
+</body>
+
+</html>
